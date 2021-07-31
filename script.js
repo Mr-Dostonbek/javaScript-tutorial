@@ -1,26 +1,40 @@
 "use strict";
 
-// const numberOfNews = +prompt("Siz qancha yangilik ko`rdiz?");
+const numberOfNews = +prompt("Siz qancha yangilik ko`rdiz?");
 
 const personalNewsDB = {
-  // count: numberOfNews,
+  count: numberOfNews,
   news: {},
   actors: {},
-  genres: [],
+  genres: [], 
   shop: {},
   privat: false,
 };
 
-// const a = prompt("Oxirgi ko`rgan yangiliklarizdan bir?"),
-//       b = prompt("Unga qancha baho bergan bo`lar ediz?");
 
-const product = prompt("Nima xarid qilmoqchisiz?"),
-      number = +prompt("Nechta xarid qilmoqchisiz?");
+for(let i = 0; i < 1; i++) {
+  const a = prompt("Oxirgi ko`rgan yangiliklarizdan bir?"),
+        b = prompt("Unga qancha baho bergan bo`lar ediz?");
 
-personalNewsDB.shop[product] = number;
+        if( a != null && b != null && a != "" && b != "" && a.length < 50) {
+          personalNewsDB.news[a] = b;
+          console.log("Tayyor");
+        } else{
+          console.log("Error !");
+          i--;
+        }
+}
 
-alert(`Sotib olganlariz narxi: ${number * 5000} so'm`);
+if( personalNewsDB.count < 10 ){
+  console.log(`Xabarni kam oqibsiz`);
+} else if( personalNewsDB.count > 10 && personalNewsDB.count < 30 ) {
+  console.log(`Siz klassik tomoshabinsiz!`);
+} else if( personalNewsDB.count > 30 ) {
+  console.log(`Siz yangiliklar ishqibozisiz!`);
+} else{
+  console.log(`Xatolik yuz berdi!`);
+}
 
-// personalNewsDB.news[a] = b;
+
 
 console.log(personalNewsDB);
