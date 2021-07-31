@@ -28,20 +28,38 @@ const personalNewsDB = {
 
 // While method
 
-let x = 0;
+// let x = 0;
 
-while (x < 1) {
+// while (x < 1) {
+//   const a = prompt("Oxirgi ko`rgan yangiliklarizdan bir?"),
+//     b = prompt("Unga qancha baho bergan bo`lar ediz?");
+
+//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//     console.log("Tayyor !");
+//   } else {
+//     console.log(`Error !`);
+//     x--;
+//   }
+//   x++;
+// }
+
+// Do While method
+
+let y = 0;
+
+do {
   const a = prompt("Oxirgi ko`rgan yangiliklarizdan bir?"),
     b = prompt("Unga qancha baho bergan bo`lar ediz?");
 
+  y++;
+
   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-    console.log("Tayyor !");
+    console.log("Tayyor");
   } else {
-    console.log(`Error !`);
-    x--;
+    console.log("Error !");
+    y--;
   }
-  x++;
-}
+} while (y < 1);
 
 if (personalNewsDB.count < 10) {
   console.log(`Xabarni kam oqibsiz`);
