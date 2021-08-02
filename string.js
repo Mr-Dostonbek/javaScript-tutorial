@@ -1,6 +1,6 @@
 "use strict";
 
-const text = "Hello World";
+// const text = "Hello World";
 
 // console.log(text.toUpperCase());
 // console.log(text.toLowerCase());
@@ -9,10 +9,10 @@ const text = "Hello World";
 
 // console.log(text.slice(6, 11));
 
-const number = 12.5;
+// const number = 12.5;
 
-console.log(Math.round(number)); // sonni yaxlitlab beradi
+// console.log(Math.round(number)); // sonni yaxlitlab beradi
 
-const borderWidth = "12px"; // stringni numberga o'tkazib beradi
+// const borderWidth = "12px"; // stringni numberga o'tkazib beradi
 
-console.log(parseInt(borderWidth));
+// console.log(parseInt(borderWidth));
