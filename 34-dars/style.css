@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.crimson{
+  padding: 8px 16px;
+  font-size: 18px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn1{
+  transform: scale(1.1);
+}
+
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 3px solid gray;
+  margin: 0 auto;
+}
+
+.box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+}
