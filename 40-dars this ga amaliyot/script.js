@@ -9,8 +9,8 @@ const btn = document.querySelector("button");
 
 // this collback funksiyada ishlamidi shuning uchun e yani event ishlatuiladi
 btn.addEventListener("click", (e) => {
-  e.target.style.backgroundColor = "crimson";
-  e.target.style.color = "white";
+    e.target.style.backgroundColor = "crimson";
+    e.target.style.color = "white";
 });
 
 // const obj = {
